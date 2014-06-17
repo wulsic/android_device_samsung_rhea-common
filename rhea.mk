@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      power.rhea
 
+# Fstrim cron job
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/init.d/69fstrim_crond:system/etc/init.d/69fstrim_crond
+
 # Lights
 PRODUCT_PACKAGES += \
      lights.rhea
