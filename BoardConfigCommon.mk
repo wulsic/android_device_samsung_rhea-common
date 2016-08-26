@@ -31,7 +31,7 @@ TARGET_BOARD_INFO_FILE := device/samsung/rhea-common/board-info.txt
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
+BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
