@@ -22,6 +22,9 @@ ARCH_ARM_HAVE_VFP := true
 ARCH_ARM_HAVE_NEON := true
 TARGET_ARCH_LOWMEM := true
 
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfloat-abi=softfp
+
 # Assertions
 TARGET_BOARD_INFO_FILE := device/samsung/rhea-common/board-info.txt
 
