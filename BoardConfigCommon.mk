@@ -175,7 +175,7 @@ BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ $(COMMON_PATH)/cmhw/
 
 # ART
 # jemalloc causes a lot of random crash on free()
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
