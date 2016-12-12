@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     mobiledata.interfaces=wlan0,gprs,rmnet0,rmnet1 \
+    persist.radio.multisim.config=dsds \
     ro.telephony.ril_class=SamsungBCMRIL \
     ro.zygote.disable_gl_preload=true \
     ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc \
