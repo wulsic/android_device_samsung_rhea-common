@@ -180,6 +180,9 @@ BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ $(COMMON_PATH)/cmhw/
 # jemalloc causes a lot of random crash on free()
 MALLOC_SVELTE := true
 
+# Some of our vendor libs have text relocations (most of OMX libs)
+TARGET_NEEDS_TEXT_RELOCATIONS := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy
