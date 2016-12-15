@@ -19,4 +19,5 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := healthd_board_rhea.cpp
 LOCAL_MODULE := libhealthd.rhea
 LOCAL_C_INCLUDES := system/core/healthd
+LOCAL_STATIC_LIBRARIES := libhealthd.default
 include $(BUILD_STATIC_LIBRARY)
